@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApiDemo.Controllers
+namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -26,7 +26,7 @@ namespace WebApiDemo.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] string username)
         {
         }
 
@@ -34,6 +34,13 @@ namespace WebApiDemo.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
+        }
+
+        [HttpPost("PostTest")]
+        public string PostTest()
+        {
+            var f = Request.Form;
+            return "aaaaaaaaaaaaa";
         }
 
         // DELETE api/values/5
