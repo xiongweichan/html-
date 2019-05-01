@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<!--相同的标签在不同的内核显示出来的样式是不一样的-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>html常用的行级标签（行内元素）</title>
+</head>
+<body>
+    <!--链接标签
+        a标签 href属性，跟的是要跳转的网址
+        target：_blank 在新窗口打开跳转的页面
+        -->
+    <a href="http://www.baidu.com">百度</a> <br />
+    <!--路径问题：在实际开发当中建议使用相对路径 ./当前目录 ../上目录-->
+    <a href="复习.html">跳转到本地的文件（复习.html）</a> <br />
+    <!--绝对路径 在windows当中绝对路径的根是我们文件所在的盘符
+
+        -->
+    <a target="_blank" href="C:\Users\Administrator\Desktop\cxw\免费web前端网页工程师-图灵学院\复习.html">跳转到本地的文件（复习.html）</a>
+    <!--通过a标签制作锚点-->
+    <br />
+    <a href="2.html#test">这是一个锚点</a>
+
+    <!--图像标签 img(单标签，不需要闭合)
+        src：图片的地址（网络资源或者本地资源）
+        alt：用于图片加载失败的替代文字（必须存在）
+        title：鼠标标题在图片上的提示信息（可写可不写）
+        width:设置图片的宽度
+        height:设置图片的高度
+        注意：一般我们只设置图片宽度或者高度，那高度或宽度会等比例放大缩小
+        -->
+
+    <img title="这是一个美女" alt="加载失败的图片"
+         width="200"
+         src="https://cn.bing.com/th?id=OIP.-5w7g95D3ks67tl-qnNEFQHaLG&pid=Api&rs=1&p=0" />
+    <img src="C:\Users\Administrator\Pictures\Saved Pictures\th.jpg" />
+    <br />
+    <!--文本标签-->
+    <!--加粗b 具有强调意义加粗strong
+        斜体i 具有强调意义的斜体em-->
+    <b>src：图片的地址（网络资源或者本地资源）</b><br />
+    <i>alt：用于图片加载失败的替代文字（必须存在）</i><br />
+    <strong>title：鼠标标题在图片上的提示信息（可写可不写）</strong><br />
+    <em>width:设置图片的宽度</em><br />
+    height:设置图片的高度<br />
+
+    <!--span无语义的行内元素 一般span标签也是配合css使用 来设置文本当中一部分内容-->
+    <span style="color:red">注意</span>：一般我们只设置图片宽度或者高度，那高度或宽度会等比例放大缩小
+    <br />
+    <!--html当中的常用的实体字符
+        &gt; 大于号
+        &lt; 小于号
+        &copy;
+        &nbsp; 空格
+        http://www.w3school.com.cn/html/html_entities.asp
+        -->
+    1&gt;2;
+    &copy;
+    设置&nbsp;&nbsp;&nbsp;&nbsp;图片&nbsp;&nbsp;&nbsp;&nbsp;的高
+
+    <!--表单标签-->
+
+
+
+</body>
+</html>
