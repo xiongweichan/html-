@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css的使用</title>
+    <!--外链式，通过link标签引入css文件    要在head标签当中引入-->
+    <link rel="stylesheet" href="./1.css" />
+    <!--嵌入式   是通过style标签来写css  也要写在head标签当中-->
+    <style>
+        div{
+        width:200px;
+        height:200px;
+        background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--内联式   同style属性来设置css样式-->
+    <div style="width:200px;height:200px;background-color:blue;"></div>
+    <div style=""></div>
+
+    <!--在css的三种使用方式中存在优先级问题，离元素越近的优先级越高   推荐使用外链式-->
+    <!--css语法：选择器{属性:值;……}-->
+    <!--标签选择器 影响范围大，建议尽量应用在层级选择器中-->
+
+    <!--id 选择器 元素的id名称不能重复，所以一个样式设置项只能对应于页面上的一个元素，不能复用-->
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css的三种基本选择器</title>
+    <style>
+        .bg{
+            
+            /*设置边框*/
+            border:1px solid black;
+        }
+
+        #box2{
+            width:100px;
+            height:100px;
+            /*设置边框*/
+            border:1px solid red;
+        }
+        /* 类选择器   通过class 类名来设置元素的样式 影响范围可控制 相对较小 */
+        .item1{
+            width:200px;
+            height:200px;
+            background-color:red;
+        }
+        /* 标签选择器  通过标签来设置元素的样式 影响范围最大 */
+        div{
+            width:100px;
+            height:100px;
+            background-color:green;
+        }
+        /* id选择器 */
+        #box1{
+             width:300px;
+            height:300px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="item1"></div>
+    <!--类名可以定义多个-->
+    <div id="box1" class="item1 bg"></div>
+    <div id="box2"></div>
+    <!--选择器优先级  id选择器 大于 类选择器 大于 标签选择器  推荐使用类选择器-->
+</body>
+</html>
